@@ -1,0 +1,15 @@
+<section class="bio">
+    <h2>¡Hola! Soy Asuka Langley Soryu.</h2>
+    <h1>{{name}}</h1>
+    <p>{{description}}</p>
+</section>
+
+<section class="projects-list">
+    <h2>Logros Operacionales (Resumen)</h2>
+    <div class="project-container">
+        {{#each projects}}
+            {{> projectCard this}} 
+        {{/each}}
+    </div>
+    <p><a href="/projects">Ver todas mis misiones y logros con más detalle &rarr;</a></p>
+</section>
