@@ -67,7 +67,7 @@ app.use((req, res, next) => {
     });
 });
 
-// --- Iniciar Servidor ---
+
 app.listen(port, () => {
     console.log(`Servidor de Asuka corriendo en http://localhost:${port}`);
 });
