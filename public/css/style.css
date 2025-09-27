@@ -1,26 +1,26 @@
 body {
-    font-family: 'Arial Black', Gadget, sans-serif; /* Fuente más audaz */
+    font-family: 'Arial Black', Gadget, sans-serif; 
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a; /* Fondo oscuro */
-    color: #e0e0e0; /* Texto claro */
-    background-image: url('/img/asuka.png'); /* Imagen de fondo de Asuka */
+    background-color: #1a1a1a; 
+    color: #e0e0e0; 
+    background-image: url('/img/asuka.png'); 
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
-    min-height: 100vh; /* Asegura que el fondo cubra toda la altura */
-    display: flex; /* Para el footer fijo */
+    min-height: 100vh; 
+    display: flex; 
     flex-direction: column;
 }
 
 header {
-    background: rgba(150, 0, 0, 0.9); /* Rojo oscuro semitransparente del EVA-02 */
+    background: rgba(150, 0, 0, 0.9); 
     color: #fff;
     padding: 1.5em 0;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    border-bottom: 3px solid #ff4500; /* Naranja brillante */
+    border-bottom: 3px solid #ff4500; 
 }
 
 header h1 {
@@ -30,7 +30,7 @@ header h1 {
 }
 
 nav a {
-    color: #ffdead; /* Blanco hueso / crema para enlaces */
+    color: #ffdead; 
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
@@ -38,55 +38,55 @@ nav a {
 }
 
 nav a:hover {
-    color: #ff4500; /* Naranja brillante al pasar el mouse */
+    color: #ff4500; 
     text-shadow: 0 0 5px #ff4500;
 }
 
 main {
     padding: 20px;
     max-width: 1000px;
-    margin: 20px auto; /* Más margen arriba y abajo */
-    flex-grow: 1; /* Permite que el contenido crezca */
+    margin: 20px auto; 
+    flex-grow: 1; 
 }
 
 .bio, .projects-list, .about-content, .error-page {
     margin-bottom: 30px;
     padding: 30px;
-    background: rgba(25, 25, 25, 0.9); /* Fondo más oscuro y semitransparente para legibilidad */
+    background: rgba(25, 25, 25, 0.9); 
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
-    border: 1px solid #ff4500; /* Borde naranja */
+    border: 1px solid #ff4500; 
 }
 
 .bio h1 {
-    color: #ff4500; /* Naranja para el nombre de Asuka */
+    color: #ff4500; 
     font-size: 3em;
 }
 
 h2 {
-    color: #c0c0c0; /* Gris claro */
-    border-bottom: 2px solid #ff4500; /* Separador naranja */
+    color: #c0c0c0; 
+    border-bottom: 2px solid #ff4500; 
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
 .project-card {
-    border: 2px solid #ff4500; /* Borde naranja más prominente */
+    border: 2px solid #ff4500; 
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    background: rgba(50, 50, 50, 0.9); /* Fondo oscuro para tarjetas */
+    background: rgba(50, 50, 50, 0.9); 
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-5px); /* Pequeño efecto hover */
+    transform: translateY(-5px); 
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 }
 
 .project-card h3 {
-    color: #ff4500; /* Naranja para los títulos de proyecto */
+    color: #ff4500; 
     margin-top: 0;
     font-size: 1.8em;
 }
@@ -96,7 +96,7 @@ h2 {
 }
 
 .project-card strong {
-    color: #ffd700; /* Dorado para destacar */
+    color: #ffd700; 
 }
 
 .project-card .detail {
@@ -110,11 +110,10 @@ h2 {
 footer {
     text-align: center;
     padding: 15px;
-    background: rgba(150, 0, 0, 0.9); /* Rojo oscuro semitransparente */
+    background: rgba(150, 0, 0, 0.9); 
     color: #fff;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
-    border-top: 3px solid #ff4500; /* Naranja brillante */
-    margin-top: auto; /* Empuja el footer hacia abajo */
+    border-top: 3px solid #ff4500; 
+    margin-top: auto; 
 }
 
-/*
