@@ -1,5 +1,3 @@
-// index.js
-
 const express = require('express');
 const { engine } = require('express-handlebars');
 const path = require('path');
@@ -7,7 +5,7 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
-// Datos Dinámicos para Asuka's Portfolio
+
 const portfolioData = {
     name: "Asuka Langley Soryu",
     description: "Segunda Niña, Piloto del EVA-02. Genio de combate y estratega formidable. ¡No necesito la ayuda de nadie! ¡Soy la mejor!",
@@ -18,7 +16,7 @@ const portfolioData = {
     ]
 };
 
-// --- Configuración de Handlebars (HBS) ---
+
 app.engine('hbs', engine({
     extname: '.hbs', 
     defaultLayout: 'main', 
@@ -32,10 +30,10 @@ app.engine('hbs', engine({
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
-// --- Servir Contenido Estático ---
+
 app.use(express.static(path.join(__dirname, 'public')));
 
-// --- Rutas ---
+
 
 app.get('/', (req, res) => {
     res.render('home', {
@@ -61,11 +59,11 @@ app.get('/projects', (req, res) => {
     });
 });
 
-// --- Manejo de Error 404 (Debe ser la última ruta definida) ---
+
 app.use((req, res, next) => {
     res.status(404).render('404', {
         pageTitle: "Error 404 | ¡Estúpido!",
-        name: portfolioData.name // Para usar el nombre en el 404
+        name: portfolioData.name 
     });
 });
 
